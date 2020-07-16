@@ -6,9 +6,9 @@ include('verifica_login.php');
 <head>
   <meta charset="UTF-8">
   <title>Tudo sobre Google glass</title>
-  <link rel="stylesheet" href="css/estilo.css"/>
-  <link rel="stylesheet" href="css/form.css">
-  <script language="JavaScript" src="javascript/funcoes.js"></script>
+  <link rel="stylesheet" href="../css/estilo.css"/>
+  <link rel="stylesheet" href="../css/form.css">
+  <script language="JavaScript" src="../javascript/funcoes.js"></script>
   <script>
     function calc_total() {
       var qtd = parseInt(document.getElementById('cQtd').value);
@@ -29,17 +29,17 @@ include('verifica_login.php');
 <h2><a href="logout.php">Sair</a></h2>
     </hgroup>
 
-    <img id="icone" src="imagens/perfil.png"/>
+    <img id="icone" src="../imagens/perfil.png"/>
 
     <nav id="menu">
       <h1>Menu Principal</h1>
       <ul>
-        <li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/perfil.png')"><a href="index.html">Home</a></li>
-        <li onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('imagens/perfil.png')"><a href="specs.html">Especificações</a></li>
-        <li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('imagens/perfil.png')"><a href="fotos.html">Fotos</a></li>
-        <li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/perfil.png')"><a href="multimidia.html">Multimídia</a></li>
-        <li onmouseover="mudaFoto('imagens/perfil.png')" onmouseout="mudaFoto('imagens/perfil.png')"><a href="index2.php">Login</a></li>
-        <li onmouseover="mudaFoto('imagens/perfil.png')" onmouseout="mudaFoto('imagens/perfil.png')"><a href="formulario.php">Sign in</a></li>
+        <li onmouseover="mudaFoto('../imagens/home.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="../html/index.html">Home</a></li>
+        <li onmouseover="mudaFoto('../imagens/especificacoes.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="../html/specs.html">Especificações</a></li>
+        <li onmouseover="mudaFoto('../imagens/fotos.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="../html/fotos.html">Fotos</a></li>
+        <li onmouseover="mudaFoto('../imagens/multimidia.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="../html/multimidia.html">Multimídia</a></li>
+        <li onmouseover="mudaFoto('../imagens/perfil.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="index2.php">Login</a></li>
+        <li onmouseover="mudaFoto('../imagens/perfil.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="formulario.php">Sign in</a></li>
       </ul>
     </nav>
   </header>
