@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.content-wrap {
+  width: 640px;
+  margin: auto;
+}
+
+#msg, #submit, #apresentacao, #aprNome, #aprIdade, #aprData, #contador {
+    opacity: 0;
+}
+
+#msg.mostrar, #submit.mostrar, #apresentacao.mostrar, #aprNome.mostrar, #aprIdade.mostrar, #aprData.mostrar, #contador.mostrar {
+    opacity: 1;
+}
+
+textarea {
+    resize:none;
+}
