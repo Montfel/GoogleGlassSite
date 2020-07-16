@@ -43,8 +43,15 @@ session_start();
                                 <div class="control">
                                     <input name="senha" class="input is-large" type="password" placeholder="Sua senha">
                                 </div>
-                            </div>
+                            </div>          
+
                             <button type="submit" class="button is-block is-link is-large is-fullwidth">Entrar</button>
+
+                            <br>
+
+                            <div class="button is-block is-success is-large is-fullwidth">
+                                <a href="cadastro.php">Cadastrar</a>
+                            </div>
                         </form>
                     </div>
                 </div>

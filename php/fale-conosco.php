@@ -25,7 +25,7 @@ include('verifica_login.php');
     <hgroup>
     <h1>Google Glass</h1>
     <h2>A revolução do Google está chegando</h2>
-    <h3>Olá, <?php echo $_SESSION['usuario'];?></h3>
+    <h3>Olá, <?php echo $_SESSION['nome'];?></h3>
 <h2><a href="logout.php">Sair</a></h2>
     </hgroup>
 
