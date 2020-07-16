@@ -33,9 +33,9 @@ a:hover {
 }
 
 header#cabecalho img#icone {
-  position: absolute;
-  left: 800px;
-  top: 70px;
+  position: relative;
+  left: 700px;
+  top: -70px;
 }
 
 header#cabecalho {
@@ -50,6 +50,7 @@ header#cabecalho h1 {
   color: #606060;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
   padding: 0px;
+  margin-top: 50px;
   margin-bottom: 0px;
 }
 
