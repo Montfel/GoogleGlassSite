@@ -39,7 +39,7 @@ include('verifica_login.php');
         <li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('imagens/perfil.png')"><a href="fotos.html">Fotos</a></li>
         <li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/perfil.png')"><a href="multimidia.html">Multimídia</a></li>
         <li onmouseover="mudaFoto('imagens/perfil.png')" onmouseout="mudaFoto('imagens/perfil.png')"><a href="index2.php">Login</a></li>
-        <li onmouseover="mudaFoto('imagens/perfil.png')" onmouseout="mudaFoto('imagens/perfil.png')"><a href="fale-conosco.html">Sign in</a></li>
+        <li onmouseover="mudaFoto('imagens/perfil.png')" onmouseout="mudaFoto('imagens/perfil.png')"><a href="formulario.php">Sign in</a></li>
       </ul>
     </nav>
   </header>
