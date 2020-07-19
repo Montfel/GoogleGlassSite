@@ -1,6 +1,7 @@
 <?php
 include('verifica_login.php');
 ?>
+
 <!DOCTYPE html>
 <html LANG="pt-br">
 <head>
@@ -45,6 +46,7 @@ include('verifica_login.php');
         <li>Olá, <?php echo $_SESSION['nome'];?></li>
 
         <li><a href="logout.php">Sair</a></li>
+
       </ul>
     </nav>
   </header>
@@ -64,26 +66,63 @@ include('verifica_login.php');
 
         <fieldset id="usuario"><legend>Identificação do Usuário</legend>
           <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="37" maxlength="35" placeholder="Nome Completo"></p>
+
           <p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"></p>
+
           <p><label for="cMail">E-mail:</label> <input type="email" name="tMail" id="cMail" size="20" maxlength="40"></p>
+
           <fieldset id="sexo"><legend>Sexo:</legend>
             <input type="radio" name="tSexo" id="cMasc" checked><label for="cMasc">Masculino</label><br>
+
             <input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label>
           </fieldset>
+
           <p><label for="cNasc">Data de Nascimento:</label><input type="date" name="tNasc" id="cNasc"></p>
         </fieldset>
 
         <fieldset id="endereço"><legend>Endereço do Usuário</legend>
           <p><label for="cRua">Logradouro:</label> <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav, ..."></p>
+
           <p><label for="cNum">Número:</label> <input type="number" name="tNum" id="cNum" min="0" max="99999"></p>
+
           <p><label for="cEst">Estado:</label>
             <select name="tEst" id="cEst">
-              <option value="SE" selected>Sergipe</option>
+
+              <optgroup label="Região Centro-oeste">
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="GO">Goiás</option>
+                <option value="DF">Distrito Federal</option>
+              </optgroup>
+
+              <optgroup label="Região Nordeste">
+                <option value="BA">Bahia</option>
+                <option value="SE" selected>Sergipe</option>
+                <option value="AL">Alagoas</option>
+                <option value="PB">Paraíba</option>
+                <option value="PE">Pernambuco</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="CE">Ceará</option>
+                <option value="PI">Piauí</option>
+                <option value="MA">Maranhão</option>
+              </optgroup>
+
+              <optgroup label="Região Norte">
+                <option value="TO">Tocantins</option>
+                <option value="AC">Acre</option>
+                <option value="PA">Pará</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+              </optgroup>
+
               <optgroup label="Região Sudeste">
                 <option value="RJ">Rio de Janeiro</option>
                 <option value="SP">São Paulo</option>
                 <option value="MG">Minas Gerais</option>
               </optgroup>
+
               <optgroup label="Região Sul">
                 <option value="PR">Paraná</option>
                 <option value="SC">Santa Catarina</option>
@@ -109,8 +148,11 @@ include('verifica_login.php');
         <fieldset id="pedido">
           <legend>Quero um Google Glass</legend>
           <p><input type="checkbox" name="tPed" id="cPed" checked><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+
           <p><label for="cCor">Cor:</label><input type="color" name="tCor" id="cCor" value="#0000ff"></p>
+
           <p><label for="cQtd">Quantidade:</label><input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"></p>
+
           <p><label for="cTot">Preço Total: R$</label><input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly></p>
         </fieldset>
 
@@ -118,7 +160,7 @@ include('verifica_login.php');
       </form>
     </article>
   </section>
-<footer id="rodape">
+  <footer id="rodape">
     <p>Copyright &copy; <?php echo date("Y")?> - by Luís Felipe Monteiro<br>
     <a href="https://www.linkedin.com/in/luís-felipe-monteiro-86276a174" target="_blank">Linkedin</a> |
     <a href="https://github.com/Montfel" target="_blank">Github</a></p>
