@@ -33,6 +33,17 @@ session_start();
                         unset($_SESSION['status_cadastro']);
                     ?>
                     <?php
+                        if (isset($_SESSION['campos_vazios'])):
+                    ?>
+                    <div class="notification is-warning">
+                      <p>Campos vazios!</p>
+                      <p>Preencha todos os campos</p>
+                    </div>
+                    <?php
+                        endif;
+                        unset($_SESSION['campos_vazios']);
+                    ?>
+                    <?php
                         if (isset($_SESSION['usuario_existe'])):
                     ?>
                     <div class="notification is-info">
