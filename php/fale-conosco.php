@@ -25,8 +25,6 @@ include('verifica_login.php');
     <hgroup>
     <h1>Google Glass</h1>
     <h2>A revolução do Google está chegando</h2>
-    <h3>Olá, <?php echo $_SESSION['nome'];?></h3>
-<h2><a href="logout.php">Sair</a></h2>
     </hgroup>
 
     <img id="icone" src="../imagens/perfil.png"/>
@@ -34,12 +32,19 @@ include('verifica_login.php');
     <nav id="menu">
       <h1>Menu Principal</h1>
       <ul>
-        <li onmouseover="mudaFoto('../imagens/home.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="../html/index.html">Home</a></li>
-        <li onmouseover="mudaFoto('../imagens/especificacoes.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="../html/specs.html">Especificações</a></li>
-        <li onmouseover="mudaFoto('../imagens/fotos.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="../html/fotos.html">Fotos</a></li>
-        <li onmouseover="mudaFoto('../imagens/multimidia.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="../html/multimidia.html">Multimídia</a></li>
-        <li onmouseover="mudaFoto('../imagens/perfil.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="index2.php">Login</a></li>
-        <li onmouseover="mudaFoto('../imagens/perfil.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="formulario.php">Sign in</a></li>
+        <li onmouseover="mudaFoto('../imagens/home.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="index.php">Home</a></li>
+
+        <li onmouseover="mudaFoto('../imagens/especificacoes.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="specs.php">Especificações</a></li>
+
+        <li onmouseover="mudaFoto('../imagens/fotos.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="fotos.php">Fotos</a></li>
+
+        <li onmouseover="mudaFoto('../imagens/multimidia.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="multimidia.php">Multimídia</a></li>
+
+        <li onmouseover="mudaFoto('../imagens/perfil.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="fale-conosco.php">Fale conosco</a></li>
+
+        <li>Olá, <?php echo $_SESSION['nome'];?></li>
+
+        <li><a href="logout.php">Sair</a></li>
       </ul>
     </nav>
   </header>
@@ -109,14 +114,14 @@ include('verifica_login.php');
           <p><label for="cTot">Preço Total: R$</label><input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly></p>
         </fieldset>
 
-        <input type="image" name="tEnviar" id="cEnviar" src="imagens/botao-enviar.png">
+        <input type="submit" name="tEnviar" id="cEnviar">
       </form>
     </article>
   </section>
 <footer id="rodape">
-    <p>Copyright &copy; 2020 - by Luís Felipe Monteiro<br>
-    <a href="https://www.facebook.com/luisfelipe.monteiro.334" target="_blank">Facebook</a> |
-    <a href="https://twitter.com/montfel_" target="_blank">Twitter</a></p>
+    <p>Copyright &copy; <?php echo date("Y")?> - by Luís Felipe Monteiro<br>
+    <a href="https://www.linkedin.com/in/luís-felipe-monteiro-86276a174" target="_blank">Linkedin</a> |
+    <a href="https://github.com/Montfel" target="_blank">Github</a></p>
   </footer>
 </div>
 </body>

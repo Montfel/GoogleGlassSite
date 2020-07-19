@@ -20,12 +20,31 @@
     <nav id="menu">
       <h1>Menu Principal</h1>
       <ul>
-        <li onmouseover="mudaFoto('../imagens/home.png')" onmouseout="mudaFoto('../imagens/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li>
-        <li onmouseover="mudaFoto('../imagens/especificacoes.png')" onmouseout="mudaFoto('../imagens/glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</a></li>
-        <li onmouseover="mudaFoto('../imagens/fotos.png')" onmouseout="mudaFoto('../imagens/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
-        <li onmouseover="mudaFoto('../imagens/multimidia.png')" onmouseout="mudaFoto('../imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html">Multimídia</a></li>
-        <li onmouseover="mudaFoto('../imagens/perfil.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="../php/index2.php">Login</a></li>
-        <li onmouseover="mudaFoto('../imagens/perfil.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="../php/cadastro.php">Sign in</a></li>
+        <li onmouseover="mudaFoto('../imagens/home.png')" onmouseout="mudaFoto('../imagens/glass-oculos-preto-peq.png')"><a href="index.php">Home</a></li>
+
+        <li onmouseover="mudaFoto('../imagens/especificacoes.png')" onmouseout="mudaFoto('../imagens/glass-oculos-preto-peq.png')"><a href="specs.php">Especificações</a></li>
+
+        <li onmouseover="mudaFoto('../imagens/fotos.png')" onmouseout="mudaFoto('../imagens/glass-oculos-preto-peq.png')"><a href="fotos.php">Fotos</a></li>
+
+        <li onmouseover="mudaFoto('../imagens/multimidia.png')" onmouseout="mudaFoto('../imagens/glass-oculos-preto-peq.png')"><a href="multimidia.php">Multimídia</a></li>
+
+        <li onmouseover="mudaFoto('../imagens/perfil.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="index2.php">Login</a></li>
+
+        <li onmouseover="mudaFoto('../imagens/perfil.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="cadastro.php">Sign in</a></li>
+
+        <?php
+          if (isset($_SESSION['logado'])):
+        ?>
+
+        <li onmouseover="mudaFoto('../imagens/perfil.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="fale-conosco.php">Fale conosco</a></li>
+
+        <li>Olá, <?php echo $_SESSION['nome'];?></li>
+
+        <li><a href="logout.php">Sair</a></li>
+
+        <?php
+          endif;
+        ?>
       </ul>
     </nav>
   </header>
@@ -90,8 +109,8 @@
   </aside>
   <footer id="rodape">
     <p>Copyright &copy; 2020 - by Luís Felipe Monteiro<br>
-    <a href="https://www.facebook.com/luisfelipe.monteiro.334" target="_blank">Facebook</a> |
-    <a href="https://twitter.com/montfel_" target="_blank">Twitter</a></p>
+      <a href="https://www.linkedin.com/in/luís-felipe-monteiro-86276a174" target="_blank">Linkedin</a> |
+      <a href="https://github.com/Montfel" target="_blank">Github</a></p>
   </footer>
 </div>
 </body>

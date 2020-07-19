@@ -18,7 +18,8 @@ $row = mysqli_num_rows($result);
 
 if ($row == 1) {
     $usuario_bd = mysqli_fetch_assoc($result);
-    $_SESSION['nome'] = $usuario_bd['nome'];
+    #$_SESSION['nome'] = $usuario_bd['nome'];
+    $_SESSION['logado'] = true;
     header('Location: fale-conosco.php');
     exit();
 } else {
