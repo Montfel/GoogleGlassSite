@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html LANG="pt-br">
 <head>
@@ -28,15 +32,23 @@
 
         <li onmouseover="mudaFoto('../imagens/multimidia.png')" onmouseout="mudaFoto('../imagens/glass-oculos-preto-peq.png')"><a href="multimidia.php">Multimídia</a></li>
 
-        <li onmouseover="mudaFoto('../imagens/perfil.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="index2.php">Login</a></li>
+        <?php
+          if (!isset($_SESSION['logado'])):
+        ?>
 
-        <li onmouseover="mudaFoto('../imagens/perfil.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="cadastro.php">Sign in</a></li>
+        <li onmouseover="mudaFoto('../imagens/perfil.png')" onmouseout="mudaFoto('../imagens/glass-oculos-preto-peq.png')"><a href="index2.php">Login</a></li>
+        
+        <li onmouseover="mudaFoto('../imagens/perfil.png')" onmouseout="mudaFoto('../imagens/glass-oculos-preto-peq.png')"><a href="cadastro.php">Sign in</a></li>
+
+        <?php
+          endif;
+        ?>
 
         <?php
           if (isset($_SESSION['logado'])):
         ?>
 
-        <li onmouseover="mudaFoto('../imagens/perfil.png')" onmouseout="mudaFoto('../imagens/perfil.png')"><a href="fale-conosco.php">Fale conosco</a></li>
+        <li onmouseover="mudaFoto('../imagens/perfil.png')" onmouseout="mudaFoto('../imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.php">Fale conosco</a></li>
 
         <li>Olá, <?php echo $_SESSION['nome'];?></li>
 
